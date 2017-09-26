@@ -6,10 +6,10 @@ ADD . /app
 RUN npm i
 RUN npm rebuild
 
-ENV PORT 8090
+ENV PORT 8082
 ENV DOCKER TRUE
 ENV REDIS_HOST redis-release
 
-EXPOSE 8090
+EXPOSE 8082
 
 CMD ["node", "dist/index.js"]
